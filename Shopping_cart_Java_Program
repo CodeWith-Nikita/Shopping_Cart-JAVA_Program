@@ -1,0 +1,27 @@
+import java.util.*;
+public class Shopping_cart_program {
+    public static void main(String[] args){
+
+        // SHOPPING CART PROGRAM
+        Scanner shoppingCart = new Scanner(System.in);
+        String item;
+        double price;
+        int quantity;
+        double totalPrice;
+
+        System.out.print("What would you like to purchase : ");
+        item = shoppingCart.nextLine();
+
+        System.out.print("Number of quantity : ");
+        quantity = shoppingCart.nextInt();
+
+        System.out.print("Price per item : ");
+        price = shoppingCart.nextDouble();
+
+        totalPrice = quantity * price;
+
+        System.out.print("\nYou have purchased " + quantity + " " + item + "/s, each costing $" + price + ", for a total price of $" + totalPrice + "😊");
+
+        shoppingCart.close();
+    }
+}
